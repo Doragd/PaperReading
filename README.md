@@ -26,7 +26,14 @@
 
 ###  文本摘要
 
-* Demoting the Lead Bias in News Summarization via Alternating Adversarial Learning
+* Demoting the Lead Bias in News Summarization via Alternating Adversarial Learning，ACL2021
+  * 抽取式摘要在一些特定领域数据上往往会有一些bias，比如news数据上，一般新闻摘要数据上，靠前的句子一般都是主旨句，也就是可以选取作为summary。不过每个数据集的bias程度并不一样，不能完全依赖这种bias来设计模型，理想中应该按照句子语义来确定。之前的方式就是去shuffle句子，这样会丢失句子之间的联系信息。这篇文章研究的就是如何设计encoder，使得编码的特征能够尽量不包含句子的位置信息，从而使得预测时候对位置信息减少依赖性。但同时，对于一些bias比较重的，严重依赖位置bias的数据集不能性能降太多。否则的话，直接把position embedding去掉不就可以不包含位置信息了吗。这篇的亮点就是设计对抗方式让encoder尽快不包含位置信息，亮点在于多个MLP的使用和与均匀分布的拉近：
+  * 典型但是又有些不同的对抗学习：
+    1.阶段1.固定预训练摘要模型，训练predictor去预测句子在文档中位置
+    2.阶段2..固定predictor，去更新摘要模型使得对抗预测loss最大化。
+    注意到：这里实际并不是最大化熵的形式。而是假定当预测不出来时，predictor应该落入一个平凡解，也就是等概率预测每个位置，即预测概率分布是一个均匀分布。所以相当于最小化两个分布之间的距离。
+  * 对每个位置的预测都采用相同的MLP会导致位置信息采用其他方式去编码，为了避免这种情况，所以对每个位置分别去用一个MLP去预测，让encoder难以通过其他隐式编码方式来保持句子的位置信息！
+  * 思考：可能这种对抗方式可以用来过滤位置信息，不过？位置信息不是可以通过去掉position embedding来去掉吗？
   * 
 
 ### 多模态
