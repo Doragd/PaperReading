@@ -33,6 +33,16 @@
   * 无监督常识问答，即给一个问题和多个选项，选出最正确的，不过并没有标注数据。以前的方式是用pretrained model去为多个选项打分，但是容易受到攻击。这里提出用生成预训练模型去生成可能的答案，再去度量和多个选项之间的距离，看哪个靠的更近。没有读完这篇文章，但是我觉得有趣的是这个打分函数的设计，用了之前用过的vMF-VAE，不过我还没仔细看过。后续还测试了经受攻击的能力。这种用生成去做无监督QA的方式还是很有意思。
   * 思考：其实我觉得可能可以用到我的那个项目上去。。。还要再思考下。这个任务也挺有意思的。
 
+### 常识生成
+
+* Retrieval Enhanced Model for Commonsense Generation，ACL2021
+  * 常识生成：给定一组概念，生成一句不违背常识和语法，且包含所有概念的句子
+    * https://inklab.usc.edu/CommonGen/leaderboard.html
+  * retrieve-and-generate范式：
+    * 伪concept-sentence预训练：从额外的语料库中提取句子和句子的concept，作预训练
+    * 检索：一种是rule-based匹配，要求检索的句子包含尽量多的目标concept，一种是trainable检索，可训练的检索器。rule-based的坏处在于倾向于去检索更长的句子，很可能不是我们想要的。相比于fan的工作，这篇主要就是提出预训练阶段也要应用检索，微调阶段要可训练地检索
+  * 思考：好吧， 这个榜单太卷了。。虽然有点想法，但是不确保能超过。
+
 ###  文本摘要
 
 * Demoting the Lead Bias in News Summarization via Alternating Adversarial Learning，ACL2021，:star:
