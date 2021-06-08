@@ -8,13 +8,13 @@
 
 * 2021/6
 
-|    Mon    | Tue  | Wed  |      Thu       |            Fri             |    Sat     | Sun  |
-| :-------: | :--: | :--: | :------------: | :------------------------: | :--------: | :--: |
-|    31     |  1   |  2   | 3:sweat_drops: | 4:triangular_flag_on_post: | 5:pensive: |  6   |
-| 7:accept: |  8   |  9   |       10       |             11             |     12     |  13  |
-|    14     |  15  |  16  |       17       |             18             |     19     |  20  |
-|    21     |  22  |  23  |       24       |             25             |     26     |  27  |
-|    28     |  29  |  30  |       1        |             2              |     3      |  4   |
+|    Mon    |        Tue        | Wed  |      Thu       |            Fri             |    Sat     | Sun  |
+| :-------: | :---------------: | :--: | :------------: | :------------------------: | :--------: | :--: |
+|    31     |         1         |  2   | 3:sweat_drops: | 4:triangular_flag_on_post: | 5:pensive: |  6   |
+| 7:accept: | 8:deciduous_tree: |  9   |       10       |             11             |     12     |  13  |
+|    14     |        15         |  16  |       17       |             18             |     19     |  20  |
+|    21     |        22         |  23  |       24       |             25             |     26     |  27  |
+|    28     |        29         |  30  |       1        |             2              |     3      |  4   |
 
 ##  :game_die: Notes
 
@@ -44,6 +44,18 @@
   * 思考：好吧， 这个榜单太卷了。。虽然有点想法，但是不确保能超过。
 
 ###  文本摘要
+
+* SimCLS: A Simple Framework for Contrastive Learning of Abstractive Summarization，ACL2021
+
+  * 这篇文章是讲怎么用对比学习的范式去缓解生成过程中的曝光偏差：训练和测试之间的不一致，首先是teacher forcing问题，测试时没有groundtruth，其次是局部预测，全局评估，MLE的训练目标和评测指标并不完全一致。
+
+  * 给定一个groundtruth，我们生成的目标肯定是要让生成的文本，与这个groundtruth在某个评价指标下分数尽量高。新的做法是分成两阶段：一个生成模型去生成候选文本，一个评估模型去打分score，选择最好的候选文本。也就是生成的时候，通过sampling去生成多个候选项，然后用roberta编码document和生成文本，正样本是和groundtruth相似度最高的。
+
+  * 其实借鉴的quality estimation的思想，更好的候选摘要 应该获得更高的质量分数 w.r.t 源文档 D
+
+  * 同时实验验证了一件事，sample多个candidate，取最大的rouge的那个样本，可以获得更好的分数！
+
+    
 
 * Demoting the Lead Bias in News Summarization via Alternating Adversarial Learning，ACL2021，:star:
   * 抽取式摘要在一些特定领域数据上往往会有一些bias，比如news数据上，一般新闻摘要数据上，靠前的句子一般都是主旨句，也就是可以选取作为summary。不过每个数据集的bias程度并不一样，不能完全依赖这种bias来设计模型，理想中应该按照句子语义来确定。之前的方式就是去shuffle句子，这样会丢失句子之间的联系信息。这篇文章研究的就是如何设计encoder，使得编码的特征能够尽量不包含句子的位置信息，从而使得预测时候对位置信息减少依赖性。但同时，对于一些bias比较重的，严重依赖位置bias的数据集不能性能降太多。否则的话，直接把position embedding去掉不就可以不包含位置信息了吗。这篇的亮点就是设计对抗方式让encoder尽快不包含位置信息，亮点在于多个MLP的使用和与均匀分布的拉近：
