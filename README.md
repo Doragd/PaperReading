@@ -12,7 +12,7 @@
 | :-------: | :---------------: | :-----------------: | :------------: | :------------------------: | :--------: | :--: |
 |    31     |         1         |          2          | 3:sweat_drops: | 4:triangular_flag_on_post: | 5:pensive: |  6   |
 | 7:accept: | 8:deciduous_tree: | 9:heavy_check_mark: |       10       |             11             |     12     |  13  |
-|    14     |        15         |         16          |       17       |             18             |     19     |  20  |
+|    14     |      15:ok:       |         16          |       17       |             18             |     19     |  20  |
 |    21     |        22         |         23          |       24       |             25             |     26     |  27  |
 |    28     |        29         |         30          |       1        |             2              |     3      |  4   |
 
@@ -23,6 +23,16 @@
 * Figurative Language in Recognizing Textual Entailment，ACL 2021 Findings
   * NLI任务的新数据集，涉及到了明喻识别，暗喻识别和讽刺识别，感觉挺难的，在MNLI上微调的roberta-large表现不太行，尤其是在涉及到需要词汇知识和语用推理的example上面。
   * 思考：没啥感想，看看以后能不能用来测试文本分类，感觉需要引入额外的知识来判断
+
+### 机器翻译
+
+* Neural Machine Translation with Monolingual Translation Memory，ACL2021
+
+  ![image-20210615160530256](https://img2020.cnblogs.com/blog/1098855/202106/1098855-20210615160533670-1655798094.png)
+
+  * 实际做的是retrieve+generate框架的事情：给定源语言-目标语言的paired data + 目标语言的target data(作为检索库)，执行机器翻译
+  * 优点：提出了一种retriever和generator是端到端联合优化的方案；在低资源和跨领域上(实际需要all domains的data一起训练，好处是不用再进行domain-specific training)表现很好；用跨语言对齐来解决联合优化中retriever的冷启动问题
+  * 以后读论文：不要浅尝辄止！否则没什么用啊！
 
 ### 问答系统
 
