@@ -110,6 +110,8 @@
   * 有趣的点是表示一些常识无法通过KG来获得，而是要通过visual experience，也就是大量图像
   * 针对传统的visual conversation需要paired image的问题，将其扩展到从大规模open-end的图像中检索，实现zero-resource image grounded dialog
   * 提了一个对齐视觉信号和融入视觉信息的生成的方法
+* Unpaired Cross-lingual Image Caption Generation with Self-Supervised Rewards，MM2020
+  * unpaired 跨语言图像描述：只给了源语言的paired data。目标语言的依靠一个现成的翻译模型来生成伪平行语料。这篇解决的是，在伪平行语料上训练时，如何缓解伪平行语料的噪声，因为并不一定是visual relevancy。提了两个reward：一个是流畅度，用在目标语言的单语语料库的LM去评测。还有一个是视觉和语言的对齐：实际也是在伪平行语料上去对齐，说其实这里面也有很多视觉相关的句子。先去训练一个匹配模型VSE。此时reward就靠这个模型给。
 * Good for Misconceived Reasons: An Empirical Revisiting on the Need for Visual Context in Multimodal Machine Translation，ACL2021
   * 多模态机器翻译指在纯文本机器翻译中加入相关的visual context信息来增强翻译效果（两种方式：一种给定源文本和一张相关图片，生成目标文本，一种是给定源文本，去检索一些相关图像，结合起来生成目标文本），实际很多人就在质疑到底需不需要visual context。以前的研究方法是把相关图像替换成随机图像来看效果变化，但实际上这种方式并不能直接看出到底需不需要visual context。这篇文章其实就是提出一个gate机制，把visual context通过一个gate去传入模型，最后检查gate的数值来看模型是否需要context 。结果发现：在输入完整的源文本时，模型并不需要visual context，最终效果提升是因为visual context视作一种radom noise从而实现对模型的正则化。在输入不完整的源文本(比如输入句子有错，有歧义，visual grounded token 被mask)时，visual context还是可以补充不完整的源文本的。
   * 思考：没啥感想，就是觉得研究某种信息是否被模型需要，可以采用一个gate机制，看看以后会不会有类似的问题可以拿来研究。
