@@ -8,13 +8,13 @@
 
 * 2021/6
 
-|    Mon    |        Tue        |         Wed         |      Thu       |            Fri             |    Sat     | Sun  |
-| :-------: | :---------------: | :-----------------: | :------------: | :------------------------: | :--------: | :--: |
-|    31     |         1         |          2          | 3:sweat_drops: | 4:triangular_flag_on_post: | 5:pensive: |  6   |
-| 7:accept: | 8:deciduous_tree: | 9:heavy_check_mark: |       10       |             11             |     12     |  13  |
-|    14     |      15:ok:       |         16          |       17       |             18             |     19     |  20  |
-|    21     |        22         |         23          |       24       |             25             |     26     |  27  |
-|    28     |        29         |         30          |       1        |             2              |     3      |  4   |
+|    Mon     |        Tue        |         Wed         |      Thu       |            Fri             |    Sat     | Sun  |
+| :--------: | :---------------: | :-----------------: | :------------: | :------------------------: | :--------: | :--: |
+|     31     |         1         |          2          | 3:sweat_drops: | 4:triangular_flag_on_post: | 5:pensive: |  6   |
+| 7:accept:  | 8:deciduous_tree: | 9:heavy_check_mark: |       10       |             11             |     12     |  13  |
+|     14     |      15:ok:       |         16          |       17       |             18             |     19     |  20  |
+| 21:accept: |        22         |         23          |       24       |             25             |     26     |  27  |
+|     28     |        29         |         30          |       1        |             2              |     3      |  4   |
 
 ##  :game_die: Notes
 
@@ -104,6 +104,13 @@
   * 思考：又一篇disentanglement的文章
 
 ### 多模态
+
+* Semi-Autoregressive Transformer for Image Captioning，准备投AAAI的
+
+  * 半-自回归生成来做image captioning
+  * 组内每个单词并行，组间串行，通过attention mask来控制
+
+  ![image-20210621140044382](https://img2020.cnblogs.com/blog/1098855/202106/1098855-20210621140047696-1936539497.png)
 
 * Maria: A Visual Experience Powered Conversational Agent, ACL2021
   * visual grounded conversation
