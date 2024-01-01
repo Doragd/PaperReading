@@ -98,5 +98,5 @@
 ---
 
 * Link: https://github.com/Doragd/PaperReading/issues/3
-* Labels: `召回`, `CIKM2022`, `腾讯`
+* Labels: `召回`, `CIKM2022`, `腾讯新闻`
 * Creation Date: 2024-01-01T13:36:27Z
