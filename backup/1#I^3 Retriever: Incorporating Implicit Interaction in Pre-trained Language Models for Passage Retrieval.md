@@ -60,5 +60,5 @@
 ---
 
 * Link: https://github.com/Doragd/PaperReading/issues/1
-* Labels: 
+* Labels: `召回`, `百度`, `CIKM2023`
 * Creation Date: 2024-01-01T13:15:56Z
