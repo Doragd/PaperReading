@@ -1,5 +1,6 @@
 # CIKM'23 百度 | 突破双塔: 生成式交互的向量化召回
 
+# CIKM'23 百度 | 突破双塔: 生成式交互的向量化召回
 * 参考论文：I^3 Retriever: Incorporating Implicit Interaction in Pre-trained Language Models for Passage Retrieval
 * 公司：百度
 * 链接：https://arxiv.org/pdf/2306.02371.pdf
