@@ -25,4 +25,4 @@ Paper阅读记录博客（基于GitHub Action和GitHub Issue实现）。
 
 |#|Title|Tag|Date|
 |:-:|:-:|:-:|:-:|
-|1|[I^3 Retriever: Incorporating Implicit Interaction in Pre-trained Language Models for Passage Retrieval](https://github.com/Doragd/PaperReading/issues/1)|`召回` `百度`|2024-01-01T13:15:56Z|
+|1|[I^3 Retriever: Incorporating Implicit Interaction in Pre-trained Language Models for Passage Retrieval](https://github.com/Doragd/PaperReading/issues/1)||2024-01-01T13:15:56Z|
