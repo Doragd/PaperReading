@@ -25,4 +25,4 @@ Paper阅读记录博客（基于GitHub Action和GitHub Issue实现）。
 
 |#|Title|Tag|Date|
 |:-:|:-:|:-:|:-:|
-|1|[CIKM'23 百度 | 突破双塔: 生成式交互的向量化召回](https://github.com/Doragd/PaperReading/issues/1)|`召回`|2024-01-01T13:15:56Z|
+|1|[【CIKM'23 百度】突破双塔: 生成式交互的向量化召回](https://github.com/Doragd/PaperReading/issues/1)|`召回`|2024-01-01T13:15:56Z|
