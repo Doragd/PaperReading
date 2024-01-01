@@ -1,6 +1,6 @@
 # An Empirical Study of Selection Bias in Pinterest Ads Retrieval
 
-# KDD’23 | Pinterest搜索广告: 召回阶段样本选择偏差问题的实证分析
+# KDD’23 | Pinterest搜索广告: 召回样本选择偏差问题实证分析
 * 参考论文：An Empirical Study of Selection Bias in Pinterest Ads Retrieval
 * 公司：Pinterest
 * 链接：https://dl.acm.org/doi/10.1145/3580305.3599771
