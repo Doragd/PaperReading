@@ -4,7 +4,7 @@
 
 Paper阅读记录博客（基于GitHub Action和GitHub Issue实现）。
 
-[![LeetCode](https://img.shields.io/github/issues/doragd/paperreading?style=flat&label=%F0%9F%8C%B8%20Paper%20Record&labelColor=%20%236DB9EF&color=%23FF90BC&link=https%3A%2F%2Fgithub.com%2Fdoragd%2Fpaperreading
+[![PaperReading](https://img.shields.io/github/issues/doragd/paperreading?style=flat&label=%F0%9F%8C%B8%20Paper%20Record&labelColor=%20%236DB9EF&color=%23FF90BC&link=https%3A%2F%2Fgithub.com%2Fdoragd%2Fpaperreading
 )](https://github.com/doragd/paperreading)
 
 
