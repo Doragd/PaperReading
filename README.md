@@ -14,7 +14,7 @@ Paper阅读记录博客（基于GitHub Action和GitHub Issue实现）。
 
 |Mon|Tue|Wed|Thu|Fri|Sat|Sun|
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-|1🌟|2|3|4|5|6|7|
+|1🌟|2🌟|3|4|5|6|7|
 |8|9|10|11|12|13|14|
 |15|16|17|18|19|20|21|
 |22|23|24|25|26|27|28|
@@ -25,6 +25,7 @@ Paper阅读记录博客（基于GitHub Action和GitHub Issue实现）。
 
 |#|Title|Tag|Date|
 |:-:|:-:|:-:|:-:|
+|6|[Adaptive Hyper-parameter Learning for Deep Semantic Retrieval](https://github.com/Doragd/PaperReading/issues/6)|`召回` `EMNLP2023` `京东`|2024-01-02T15:49:40Z|
 |5|[Large Language Model based Long-tail Query Rewriting in Taobao Search](https://github.com/Doragd/PaperReading/issues/5)|`召回` `WWW2024` `淘宝主搜`|2024-01-01T13:40:14Z|
 |4|[Rethinking Multi-Interest Learning for Candidate Matching in Recommender Systems](https://github.com/Doragd/PaperReading/issues/4)|`召回` `RecSys2023` `港科大`|2024-01-01T13:38:07Z|
 |3|[Model-agnostic Integrated Cross-channel Recommender](https://github.com/Doragd/PaperReading/issues/3)|`召回` `CIKM2022` `腾讯新闻`|2024-01-01T13:36:27Z|
