@@ -98,3 +98,11 @@
 * Link: https://github.com/Doragd/PaperReading/issues/6
 * Labels: `召回`, `EMNLP2023`, `京东`
 * Creation Date: 2024-01-02T15:49:40Z
+
+---
+
+腾讯的PEG也有类似的思路
+![image](https://github.com/Doragd/PaperReading/assets/57557208/7c71a3c6-a0cb-4bb2-8f98-5b19707c5982)
+
+
+*
