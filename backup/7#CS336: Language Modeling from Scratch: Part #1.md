@@ -33,3 +33,12 @@
 <img width="3472" height="1304" alt="Image" src="https://github.com/user-attachments/assets/787afd63-0463-4057-8125-8d40cc2092b7" />
 
 *
+
+---
+
+<img width="2736" height="688" alt="Image" src="https://github.com/user-attachments/assets/326a3848-9136-4af5-86ec-c571bd3a346a" />
+scale很重要，但算法并不是不重要，正确的理解是：能够scale的算法是很重要的！
+因为精度取决于效率和资源，实际上，在更大规模上面，效率是更重要的，因为你承受不起浪费
+  
+
+*
