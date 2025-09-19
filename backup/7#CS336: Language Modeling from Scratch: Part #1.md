@@ -25,3 +25,11 @@
 * Link: https://github.com/Doragd/PaperReading/issues/7
 * Labels: `课程`, `CS336`
 * Creation Date: 2025-09-19T05:43:25Z
+
+---
+
+有些直觉是没办法被解释的，只能说实验出来确实牛逼，只能理解为神的恩赐，比如SwiGLU
+
+<img width="3472" height="1304" alt="Image" src="https://github.com/user-attachments/assets/787afd63-0463-4057-8125-8d40cc2092b7" />
+
+*
