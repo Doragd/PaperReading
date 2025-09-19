@@ -23,5 +23,5 @@
 ---
 
 * Link: https://github.com/Doragd/PaperReading/issues/7
-* Labels: `课程`
+* Labels: `课程`, `CS336`
 * Creation Date: 2025-09-19T05:43:25Z
